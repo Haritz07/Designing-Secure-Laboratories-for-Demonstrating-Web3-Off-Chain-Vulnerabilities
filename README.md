@@ -30,6 +30,7 @@ By creating realistic and reproducible lab environments, security researchers ca
 ## Repository Structure
 
 The repository is organized as follows:
+
 web3-security-labs/
 ├── lab1-idor/
 │   ├── index.js
