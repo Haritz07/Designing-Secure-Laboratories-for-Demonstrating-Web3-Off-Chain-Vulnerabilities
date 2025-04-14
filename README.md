@@ -52,10 +52,12 @@ web3-security-labs/
    
 2. **Explore Each Lab:**
    -- Lab 1 (IDOR): See lab1-idor/README.md for details on replicating an IDOR vulnerability in a relayer service API.
-   -- Lab 2 (Improper Input Validation): See lab2-signing-validation/README.md for details on how a signing service may fail       to validate transaction inputs correctly.
+   
+   -- Lab 2 (Improper Input Validation): See lab2-signing-validation/README.md for details on how a signing service may fail to validate transaction inputs correctly.
 
-3. **Setup and Run:**
+4. **Setup and Run:**
    -- Each lab includes instructions on installing dependencies and running the respective Node.js application.
+   
    -- (Optional) Docker files are provided for containerized setups.
 
 ## Relevance to Web3 Security
