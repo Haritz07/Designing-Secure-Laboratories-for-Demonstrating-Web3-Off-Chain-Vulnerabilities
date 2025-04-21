@@ -62,7 +62,10 @@ The reason is that the service does not check input parameters. Garbage recipien
 To prevent such vulnerabilities:
 
   **- Implement Input Validation:** Ensure that all inputs are checked for correctness, including format and value ranges.​
+  
   **- Use Schema Validation:** Employ JSON schema validators to enforce strict input structures.
+  
   **- Sanitize Inputs:** Remove or escape any potentially harmful characters from user inputs.
+  
   **- Employ Error Handling:** Gracefully handle invalid inputs by returning appropriate error messages without processing the request.
         
