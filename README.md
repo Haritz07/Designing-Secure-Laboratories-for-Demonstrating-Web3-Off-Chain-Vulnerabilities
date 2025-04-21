@@ -3,33 +3,33 @@
 # Web2 Vulnerabilities in Web3 -- Lab Design.
 
 ## Introduction
-The advent of Web3 promises a decentralized, user-centric internet. However, its underlying architecture also introduces novel complexities—particularly within its off-chain components. Relayers facilitating transaction submissions, signers authorising blockchain actions, and backend services managing off-chain data rely on traditional Web2 infrastructure. Consequently, these critical components inherit well-known vulnerabilities from the Web2 world.
+Web3 brings with it a decentralised, user-controlled web. Its foundations also introduce new vulnerabilities, particularly in its off-chain features. Relayers that allow transactions to be posted, signers that validate blockchain transactions, and backend systems that manage off-chain data rely on old Web2 infrastructure. These vital components, then, inherit similar vulnerabilities from the Web 2 world.
 
-Among the most concerning vulnerabilities are:
+Some of the most dangerous vulnerabilities are:
 
-- **Insecure Direct Object References (IDOR):** An access control flaw where attackers can modify identifiers (e.g., user IDs) to access data or perform actions not intended for them.
-- **Improper Input Validation:** When a system fails to validate external inputs rigorously, attackers can send malformed or malicious data that bypasses critical checks—leading to unauthorized, unintended actions (such as signing or relaying fabricated transactions).
+- **Insecure Direct Object References (IDOR):** Access control weakness through which attackers are able to manipulate identifiers (e.g., user IDS) to access or perform operations on data or perform activities not originally intended by them.
+- **Improper Input Validation:** A system's failure to validate external inputs correctly enables attackers to provide malformed or malicious input that bypasses meaningful checks, leading to unauthorised, unexpected actions (e.g., signing or relaying fake transactions).
 
-## The Increasing Attack Surface
+## The Growing Attack Surface
 
-As Web3 off-chain infrastructure becomes more sophisticated and interconnected, vulnerabilities like IDOR and improper input validation are increasingly prevalent and damaging. For instance:
-- A compromised relayer due to improper input validation could allow the forwarding of unauthorized transactions.
-- An IDOR flaw in a backend service could expose sensitive user data.
+As Web3 off-chain infrastructure gets more sophisticated and interconnected, problems like IDOR and improper input validation worsen and become more devastating. For instance:
+- A compromised relayer via improper input validation can facilitate unauthorised forwarding of transactions.
+- An IDOR bug in a backend service can expose sensitive user data.
 
-The consequences can range from financial losses and data breaches to a complete compromise of off-chain processes, undermining the security and trust in decentralized systems.
+The effect can range from data and financial losses to complete derailment of off-chain operations, which can compromise the integrity and trust in decentralized systems.
 
 ## Purpose and Relevance
 
-Recognizing and mitigating these risks is essential for the widespread adoption and trust in Web3 technologies. This project aims to demonstrate these vulnerabilities in controlled laboratory settings that are:
+Recognising and mitigating these risks is essential for the widespread adoption and trust in Web3 technologies. This project aims to demonstrate these vulnerabilities in controlled laboratory settings that are:
 - **Realistic:** Reflecting actual Web2 flaws impacting Web3 components.
 - **Reproducible:** Properly documented for bug bounty programs and security education.
-- **Impactful:** Illustrating how exploitation of these flaws can lead to significant security breaches in decentralized applications.
+- **Impactful:** Illustrating how exploitation of these flaws can lead to significant security breaches in decentralised applications.
 
 By creating realistic and reproducible lab environments, security researchers can effectively illustrate the potential for exploitation and drive home the importance of thorough security practices in both off-chain and on-chain systems.
 
 ## Repository Structure
 
-The repository is organized as follows:
+The repository is organised as follows:
 
 web3-security-labs/
 ├── lab1-idor/
@@ -58,16 +58,16 @@ web3-security-labs/
 4. **Setup and Run:**
    -- Each lab includes instructions on installing dependencies and running the respective Node.js application.
    
-   -- (Optional) Docker files are provided for containerized setups.
+   -- (Optional) Docker files are provided for containerised setups.
 
 ## Relevance to Web3 Security
-This project illustrates how seemingly simple flaws in Web2 infrastructure can directly impact Web3 systems. Even if smart contracts remain secure, vulnerabilities in off-chain components—like relayers and signing services—can lead to:
+This project illustrates how seemingly simple flaws in Web2 infrastructure can directly impact Web3 systems. Even if smart contracts remain secure, vulnerabilities in off-chain components, like relayers and signing services, can lead to:
 
-  -- Unauthorized access to sensitive data
+  -- Unauthorised access to sensitive data
     
   -- Manipulation of transaction flows
 
-  -- Financial losses in decentralized environments
+  -- Financial losses in decentralised environments
 
 Properly securing these off-chain components is crucial for the integrity and longevity of Web3 applications.
 
